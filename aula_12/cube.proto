@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service CubeService {
+  rpc GetCube (CubeRequest) returns (CubeResponse);
+}
+
+message CubeRequest {
+  double number = 1;
+}
+
+message CubeResponse {
+  double cube = 1;
+}
